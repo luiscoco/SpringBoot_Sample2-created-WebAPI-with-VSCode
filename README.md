@@ -10,7 +10,13 @@ First, ensure you have the following setup in your VS Code environment:
 
 - **Maven** for dependency management
 
-## 2. Here's a simple Java Spring Boot application source code
+## 2. Project folders structure
+
+![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/15efd028-41f0-46f3-bf6f-6856546f393e)
+
+![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/d7cf549c-03c9-44ac-b340-9d5b12404d88)
+
+## 3. Here's a simple Java Spring Boot application source code
 
 **pom.xml**
 
@@ -99,7 +105,7 @@ public class HelloController {
 }
 ```
 
-## 3. Dockerfile
+## 4. Dockerfile
 
 ```
 # Start with a base image containing Java runtime
@@ -123,3 +129,36 @@ ADD ${JAR_FILE} demoapi.jar
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/demoapi.jar"]
 ```
+
+## 5. To build and package the application
+
+To build the application execture this command in the VSCode terminal window:
+
+```
+mvn clean install
+```
+
+![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/2e29db06-e971-47d7-babe-13b51125943e)
+
+To run the application run this command:
+
+```
+java -jar target/demoapi-0.0.1-SNAPSHOT.jar
+```
+
+## 6. How build the Docker image and run it
+
+To build the Docker image execute this command:
+
+```
+docker build -t demoapi .
+```
+
+To run the Web API docker image run this command:
+
+```
+docker run -p 8080:8080 demoapi
+```
+
+
+
