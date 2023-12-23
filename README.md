@@ -190,7 +190,6 @@ docker run -p 8080:8080 demoapi
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/f01af46d-595f-470b-b07d-68d17bc98e7c)
 
-
 ## 8. How to create this example with ChatGPT-4
 
 - Please provide me a Java API code sample in VSCode
