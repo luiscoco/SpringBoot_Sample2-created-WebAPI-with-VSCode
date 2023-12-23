@@ -1,4 +1,4 @@
-# How to create a SpringBoot Web API in VSCode
+# How to create a SpringBoot Web API in VSCode and create/run a Docker image in your localhost
 
 You can find this example source code in this github repo: https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode
 
