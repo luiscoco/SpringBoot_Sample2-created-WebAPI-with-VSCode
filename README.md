@@ -181,7 +181,7 @@ docker run -p 8080:8080 demoapi
 
 - Can you provide me the deployment.yml and service.yml files to deploy the application in AWS EKS?
 
-## 8. To deploy the Web API in AWS EKS
+## 8. How deploy the Web API in AWS EKS
 
 To deploy your application in AWS Elastic Kubernetes Service (EKS), you'll need to create two YAML files: one for the deployment (**deployment.yml**) and one for the service (**service.yml**). 
 
