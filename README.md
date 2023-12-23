@@ -107,7 +107,33 @@ public class HelloController {
 }
 ```
 
-## 4. Dockerfile
+## 4. Install the project dependencies 
+
+Include the following libraries in the pom.xml file:
+
+- spring-boot-starter-actuator
+- spring-boot-starter-web
+- spring-boot-starter-test
+
+```
+...
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+   <scope>test</scope>
+</dependency>
+...
+```
+
+## 5. Dockerfile
 
 ```
 # Start with a base image containing Java runtime
@@ -132,7 +158,7 @@ ADD ${JAR_FILE} demoapi.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/demoapi.jar"]
 ```
 
-## 5. To build and package the application
+## 6. To build and package the application
 
 To build the application execture this command in the VSCode terminal window:
 
@@ -148,7 +174,7 @@ To run the application run this command:
 java -jar target/demoapi-0.0.1-SNAPSHOT.jar
 ```
 
-## 6. How build the Docker image and run it
+## 7. How build the Docker image and run it
 
 To build the Docker image execute this command:
 
@@ -165,7 +191,7 @@ docker run -p 8080:8080 demoapi
 ![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/f01af46d-595f-470b-b07d-68d17bc98e7c)
 
 
-## 7. How to create this example with ChatGPT-4
+## 8. How to create this example with ChatGPT-4
 
 - Please provide me a Java API code sample in VSCode
 
