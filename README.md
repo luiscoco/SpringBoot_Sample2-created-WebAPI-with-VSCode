@@ -204,7 +204,7 @@ docker run -p 8080:8080 demoapi
 
 - Please provide me the command to run the docker image and access to the endpoint in my internet web browser
 
-# 9. Set the application.properties file
+## 9. Set the application.properties file
 
 ```
 # Server Configuration
