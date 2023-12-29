@@ -203,3 +203,29 @@ docker run -p 8080:8080 demoapi
 - Can you provide me the Dockerfile to create a docker image for the above application API?
 
 - Please provide me the command to run the docker image and access to the endpoint in my internet web browser
+
+# 9. Set the application.properties file
+
+```
+# Server Configuration
+server.port=8080
+
+# Logging
+logging.level.org.springframework.web=INFO
+logging.level.org.hibernate=ERROR
+
+# Actuator Endpoints
+management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+
+# Actuator Info
+info.app.name=My Spring Boot Application
+info.app.description=A simple demo application
+info.app.version=1.0.0
+```
+
+![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/4137509f-8e0f-4daa-886a-95ae9205975b)
+
+If we set the application.properties content we can see the application health
+
+![image](https://github.com/luiscoco/SpringBoot_Sample2-created-WebAPI-with-VSCode/assets/32194879/c1ca27f2-ee45-4eaa-8ff9-478af30cae13)
